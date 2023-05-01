@@ -20,5 +20,19 @@ namespace MortCalc
                 );
             form2.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Form4 form4 = new Form4();
+            form4.FormClosed +=
+                new FormClosedEventHandler(
+                    (object sender, FormClosedEventArgs e) =>
+                    {
+                        Show();
+                    }
+                );
+            form4.Show();
+        }
     }
 }
